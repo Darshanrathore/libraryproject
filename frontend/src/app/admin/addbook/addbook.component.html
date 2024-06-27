@@ -1,0 +1,48 @@
+
+ <form #addbookform="ngForm" (onsubmit)="addbook(addbookform.value)" class="container-fluid  w-50 h-100 text-dark">
+    <h1>Add Book</h1>
+  <div class="form-group">
+    <label for="Bookname">Bookname</label>
+    <input type="text"   ngModel class="form-control" name="bookname" placeholder="Book Name" >
+  </div>
+  <div class="form-group">
+    <label for="Author">Author</label>
+    <input type="text"   ngModel class="form-control" name="author" placeholder="Author"  >
+  </div>
+   <div class="form-group">
+    <label for="Discription">Discription</label>
+    <input type="text"   ngModel class="form-control" name="discription" placeholder="Discription" >
+  </div>
+   
+   <div class="form-group">
+    <label for="price">Price</label>
+    <input type="text"   ngModel class="form-control" name="price" placeholder="price">
+  </div>
+   <div class="form-group">
+    <label for="image">Enter Image url</label>
+    <input type="text"   ngModel class="form-control" name="images" placeholder="Image url">
+  </div>
+<div class="form-group">
+    <label for="category">Category:-&nbsp;&nbsp;</label>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ngModel  name="category" id="inlineCheckbox1" value="Finance">
+  <label class="form-check-label" for="inlineCheckbox1">Financial book</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ngModel  name="category" id="inlineCheckbox2" value="Education">
+  <label class="form-check-label" for="inlineCheckbox2">Education book</label>
+</div>
+    <!-- <input type="text"   ngModel class="form-control" name="category"placeholder="Enter category" > -->
+  </div>
+
+ <!-- <div class="form-group">
+   <label for="file">Upload Image</label>
+   
+    <input class="form-control" type="file" (change)="onselectFile($event)">
+    <img [src]="url" height="100" width="150px">
+</div> -->
+
+<button class="btn btn-success" type="button"  (click)="addbook(addbookform.value)"  >Add Book</button>
+<button class="btn btn-success" type="button" (click)="back()" >Back</button>
+
+</form> 

@@ -1,0 +1,34 @@
+ <form #updatebookform="ngForm" (ngSubmit)="update(updatebookform.value)"  class="container-fluid  w-50 h-100 text-dark" *ngFor="let u of ubook">
+    <h1>update Book</h1>
+  <div class="form-group">
+    <label for="Bookname">Bookname</label>
+    <input type="text"  ngModel="{{u.bookname}}" value="[ubook]" class="form-control" name="bookname" placeholder="Book Name" >
+  </div>
+  <div class="form-group">
+    <label for="Author">Author</label>
+    <input type="text" ngModel="{{u.author}}"  class="form-control" name="author" placeholder="Author"  >
+  </div>
+   <div class="form-group">
+    <label for="Discription">Discription</label>
+    <input type="text"   ngModel="{{u.discription}}" class="form-control" name="discription" placeholder="Discription" >
+  </div>
+  <div class="form-group">
+    <label for="category">category</label>
+    <input type="text"   ngModel="{{u.category}}" class="form-control" name="category" placeholder="category" >
+  </div>
+  <div class="form-group">
+    <label for="images">Image Url</label>
+    <input type="text"   ngModel="{{u.images}}" class="form-control" name="images" placeholder="images url" >
+  </div>
+   <div class="form-group">
+    <label for="price">Price</label>
+    <input type="text"   ngModel="{{u.price}}" class="form-control" name="price" placeholder="price">
+
+  </div>
+
+ 
+<button class="btn btn-success" type="button" (click)="update(updatebookform.value)" >update</button>
+<button class="btn btn-success" type="button" (click)="back()" >Back</button>
+
+</form> 
+

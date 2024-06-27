@@ -1,0 +1,77 @@
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=" "><span class="text-warning"><b> A-Z</b></span>Library</a>
+    <button class="navbar-toggler" type="button" (click)="navbaropen()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" ngclass="('show':navopen)">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=""><b>Home</b> </a>
+        </li>
+       
+        <li class="nav-item dropdown" >
+          <a class="nav-link active dropdown-toggle"  (click)="dropdownopen()"  role="button" data-bs-toggle="dropdown"  data-bs-target="dropdown" aria-expanded="false">
+            <b> Books</b>
+          </a>
+          
+          <ul class="dropdown-menu" [ngClass]="{'show':dropopen}">
+            <li class="dropdown-item" > <b class="text-warning">CATEGORIES</b></li>
+            <li><a class="dropdown-item" routerLink="allbooks"><b> All Books</b></a></li>
+            <li><a class="dropdown-item" (click)="education()"  routerLink="education"><b>Education</b> </a></li>
+            <li><a class="dropdown-item" (click)="finance()" routerLink="financial"><b>Financial Books</b> </a></li>
+          </ul>
+          <!-- routerLink="education"
+           routerLink="financial" -->
+        </li>
+        <!-- <ng-template ></ng-template> -->
+        <li *ngIf="loginrole=='admin'" class="nav-item">
+          <a class="nav-link active text-success" routerLink="books" ><b>Manage book</b> </a>
+        </li>
+         <li *ngIf="loginrole=='admin'" class="nav-item" >
+          <a class="nav-link active text-success" routerLink="addbook" ><b>Add book</b> </a>
+        </li>
+       
+        <!-- <ng-template #elserole></ng-template> -->
+          <li *ngIf="loginrole!=='admin'" class="nav-item" >
+             <a class="nav-link active" routerLink="" (click)="scrolltoabout()"><b>About Us</b></a>
+        </li>
+         <li *ngIf="loginrole!=='admin'" class="nav-item">
+          <a class="nav-link active"  routerLink="" (click)="scrolltocontact()"><b>Contact Us</b></a>
+        </li>
+        
+        
+
+         
+
+        <ng-template #elseblock >
+         <li class="nav-item" >
+          <a class="nav-link active text-success" routerLink="login" ><b>Login</b> </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active text-primary" aria-current="page" routerLink="signup"><b>Signup</b> </a>
+        </li>
+       
+        </ng-template>
+
+        <li *ngIf="!show else elseblock"  class="nav-item">
+          <a class="nav-link active  text-danger " routerLink="" (click)="logout()" ><b>Logout</b> </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input  class="form-control me-2" [(ngModel)]="searchvalue" (input)="onsearchText()" type="search" placeholder="Search Boook" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit" routerLink="allbooks" >Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav> 
+
+

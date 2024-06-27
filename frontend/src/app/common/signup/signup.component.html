@@ -1,0 +1,23 @@
+
+
+<form [formGroup]="signupform" class="container-fluid  w-50 h-100  text-dark" (ngSubmit)="signup()">
+    <h1>Register </h1>
+    <div class="form-group">
+    <label for="username"> Name</label>
+    <input type="name" class="form-control" formControlName="name" ngModel name="name"id="username" aria-describedby="namehelp" placeholder="Enter Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" formControlName="email" ngModel name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" formControlName="password" ngModel name="password" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <!-- <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div> -->
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>

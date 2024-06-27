@@ -1,0 +1,204 @@
+<!-- 
+
+<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" data-interval="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../assets/images/portrayal-gce6f32fd6_1920.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h2><b>There is no friend as loyal as a <span class="text-warning">book</span> </b></h2>
+        <p><a href="" class="btn btn-warning mt3">Explore Books</a></p>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="../../../assets/images/apple-gc3cabcc23_1920.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/images/candle-g4220cd22e_1920.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+
+
+<ngb-carousel >
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../../assets/images/portrayal-gce6f32fd6_1920.jpg" class="d-block w-100" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			 <h2><b>"There is no friend as loyal as a <span class="text-warning">book"</span> </b></h2>
+        <p><a routerLink="allbooks" class="btn btn-warning mt3">Explore Books</a></p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../../assets/images/apple-gc3cabcc23_1920.jpg" class="d-block w-100" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+		 <h2><b>"Today a reader <span class="text-warning">, Tomorrow a Leader." </span> </b></h2>
+        <p><a routerLink="allbooks" class="btn btn-warning mt3">Explore Books</a></p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../../assets/images/candle-g4220cd22e_1920.jpg" class="d-block w-100" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">
+		 <h2><b>"<span class="text-warning">A</span> word after a word after a word is power."  </b></h2>
+        <p><a routerLink="allbooks" class="btn btn-warning mt3">Explore Books</a></p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+
+
+
+
+<!-- Aboout us -->
+
+ <section id="about" class="about section-padding">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-12">
+        <div class="about-img">
+          <img src="../../../assets/images/justice-g7c3856a38_1920.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-2">
+        <div class="about-text">
+          <h2>We Provide Best Quality <br>Services</h2>
+          <p>Books are our best friends who help us increase our knowledge and make us more creative.
+             They are the best solutions to every problem that comes our way. 
+            Reading various books helps change the way of looking at the world and develop 
+            a positive attitude towards life.</p>
+            <a href="" class="btn btn-warning">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- Service section -->
+ <section id="about us" class="services section-padding-service">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center pb-5">
+        <h2>About Us</h2>
+        <p>We are Providing good Services To our valueable Customers</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <h3 class="card-title text-warning">Free & Fast Delivery</h3>
+          <p class="lead">We are providing free & Fast delivery at your door step across the country</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <h3 class="card-title text-warning">Book's on Rent</h3>
+          <p class="lead">providing new books on rent <br> at very low cost for a good amount of time</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <h3 class="card-title text-warning">Return & Refund</h3>
+          <p class="lead">We facitilating our customers with <span class="text-warning">7 </span>Days <span class="text-danger">Return and Refund </span>
+            Policy without  any question</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ </section>
+
+<!-- Contact Us -->
+
+<section id="contact us" class="contact section-padding">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center pb-5">
+        <h2>Contact Us</h2>
+        <p>Contact us if you have any queries</p>
+      </div>
+    </div>
+  </div>
+  <div class="row m-0">
+    <div class="col-md-12 p-0-pt-4 pb-4">
+      <form action="#" class="bg-light p-4.m-auto">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="mb-3">
+            <input type="text" class="form-control" required placeholder="Enter Full Name">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="mb-3">
+            <input type="email" class="form-control" required placeholder="Enter Email">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="mb-3">
+            <textarea rows="3" required class="form-control" placeholder="Please Enter your Query Here"></textarea>
+          </div>
+        </div>
+
+        <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- footer -->
+<!-- <footer class="bg-dark p-2 text-center">
+  <div class="container">
+    <p class="text-white">All Right Reserved @ <span class="text-warning">A-Z</span>Library</p>
+  </div>
+</footer> -->
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+ <section id="about" class="about section-padding" *ngFor="let b of buybook">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-12">
+        <div class="about-img">
+          <img src="{{b.images}}" alt="" class="img-fluid" style="height: 400px;">
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-2">
+        <div class="about-text">
+          <h2>{{b.bookname|uppercase}}</h2>
+          <h2>Price: ${{b.price}}</h2>
+          <p>{{b.discription}}</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Corporis dolorum magnam deleniti quis nostrum vel veniam, 
+             aut sequi eligendi voluptatibus!</p>
+          <div class="d-grid gap-2  d-md-block">
+  <button class="btn btn-dark col-sm-3 me-md-2" type="button" ><b class="text-warning">Order Now</b></button>
+  <button class="btn btn-dark col-sm-3" type="button"><b class="text-warning">Add To Cart 🛒</b></button>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>

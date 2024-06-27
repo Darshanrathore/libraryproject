@@ -1,0 +1,53 @@
+
+ 
+p{
+    text-align: center;
+    margin-top: 5px;
+}
+img{
+    padding-left: 0px;
+    padding-right: 0px;
+     padding-top: 0px;
+    height: 300px;
+   
+}
+
+h5{
+    text-align: center;
+    
+    margin-top: 10px;
+    color: rgb(14, 14, 126);
+}
+
+
+ .buy{
+   
+    padding-bottom: 0px;
+    background-color: rgb(29, 42, 161);
+    color: white;
+ }
+ b{
+    text-align: center;
+ } 
+.background{
+    background-image: url('../../../assets/images/bible-g8c1eb29c9_1920.jpg');
+background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  
+}
+
+.card{
+    background-color:rgb(211, 192, 157);
+    border-radius: 10px;
+    border: solid 3px;
+    
+}
+.card-body:hover{
+
+ 
+}

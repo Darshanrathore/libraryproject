@@ -1,0 +1,15 @@
+.container-fluid {
+    padding-top: 40px;
+}
+img{
+    padding-left: 0px;
+    padding-right: 0px;
+     padding-top: 0px;
+    height: 300px;
+   
+}
+
+.d-flex{
+    padding-top: 50px;
+    text-align: center;
+}

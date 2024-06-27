@@ -1,0 +1,25 @@
+
+ 
+ <div class="container-fluid background">
+ <app-search (searchtextChanged)="onsearchTextEntered($event)"></app-search>
+  <div class="row gy-3 my-3" >
+     
+    <div class="col-sm-6 col-lg-3 col-md-4" *ngFor="let b of books">
+      <div class="card" *ngIf="searchText==='' || b.bookname.toLowerCase().includes(searchText)">
+  <img src="{{b.images}}" class="card-img-top" alt="...">
+  <div class="card-body" >
+    <h5 class="card-title"><b> {{b.bookname |uppercase}}</b></h5>
+    <p class="card-text"><b>${{b.price}}</b></p>
+  <div class="d-grid col-12 mx-auto">
+  
+  <!-- <button class="btn btn-dark col-sm-9" type="button"><b class="text-warning">Buy Now</b> </button> -->
+<div class="d-grid gap-2 d-md-block">
+  <button class="btn btn-dark col-sm-12" routerLink="buybook/{{b.id}}" type="button" ><b class="text-warning">Buy Now</b></button>
+  <!-- <button class="btn btn-dark col-sm-3" type="button"><b class="text-warning"> 🛒</b></button> -->
+</div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div> 

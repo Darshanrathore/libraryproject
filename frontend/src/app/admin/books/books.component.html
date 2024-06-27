@@ -1,0 +1,43 @@
+<h1> Books</h1>
+  <table class="table container-fluid   h-100 bg-light text-dark ">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Book-Name</th>
+       <th scope="col">Image</th>
+      <th scope="col">Author</th>
+      <th scope="col">Discription</th>
+      <th scope="col">category</th>
+    <th scope="col">$price</th>
+    <th scope="col" class="col-3">Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of books">
+      <th scope="row">{{b.id}}</th>
+      <td>{{b.bookname}}</td>
+      <td><img src="{{b.images}}" style="width: 60px; height: 60px;"/></td>
+      <td>{{b.author}}</td>
+      <td>{{b.discription}}</td>
+      <td>{{b.category}}</td>
+      <td>${{b.price}}</td>
+      <!-- <button class="btn btn-primary" type="button" routerLink="updatebook/{{b.id}}" >Update</button> -->
+    <td >
+<div class="d-grid gap-2 d-md-block">
+  <button class="btn btn-primary" type="button" routerLink="updatebook/{{b.id}}" >Update</button>
+    <!-- <button class="btn btn-primary" type="button" (click)="updatebook()" >Update</button> -->
+
+  <button class="btn btn-danger mr-20px" type="button" (click)="deletebook(b.id)">Delete</button>
+</div>
+ </td>
+ </tr>
+  </tbody>
+</table>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-success" type="button" routerLink="addbook">Add Book</button>
+ 
+</div>
+
+
+<router-outlet></router-outlet>
